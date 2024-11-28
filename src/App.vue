@@ -7,8 +7,8 @@
       
       <!-- Botões pequenos -->
       <div class="action-buttons">
-        <button @click="saveProfile">Salvar</button>
-        <button @click="makeCall">Ligar</button>
+        <button class="contacts" @click="saveProfile">Salvar</button>
+        <button class="contacts" @click="makeCall">Ligar</button>
       </div>
       
       <!-- Frase entre aspas -->
@@ -68,14 +68,14 @@ export default {
 }
 
 .profile-photo {
+  margin-top: -2.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  margin-top: 1.8rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   transition: scale(0) all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -100,11 +100,15 @@ export default {
   font-family: sans-serif;
   font-weight: 600;
   cursor: pointer;
-  margin: 1rem 1.5rem 1rem;
+  margin-top: 2.4rem;
   border: none;
   border-radius: 1rem;
   background: linear-gradient(to right, #ffffff, rgba(8, 84, 156, 0.928));
   cursor: pointer;
+}
+
+.contacts {
+  margin: 1.6rem;
 }
 
 .quote {
